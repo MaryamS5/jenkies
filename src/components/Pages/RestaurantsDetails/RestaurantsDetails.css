@@ -1,0 +1,74 @@
+.restaurant-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-and-reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.details span {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 1.1em;
+}
+
+.details span svg {
+  margin-right: 5px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.reviews span {
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+.reviews svg {
+  margin: 0 2px;
+  color: gold;
+}
+
+.separator-line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+.description {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #333;
+}
+
+.amazing-taste {
+  margin-top: 30px;
+  font-size: 2em;
+  font-style: italic;
+  color: #daa520;
+}
+
+.menu {
+  margin-top: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+}

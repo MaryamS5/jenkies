@@ -1,0 +1,34 @@
+.steps-section {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -130px; 
+}
+
+.step {
+    background-color: #0c1a2afe; 
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-number {
+    font-size: 1.5em;
+    color: #f0c14b;
+    font-weight: bold;
+}
+
+.step h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.step p {
+    font-size: 1em;
+}

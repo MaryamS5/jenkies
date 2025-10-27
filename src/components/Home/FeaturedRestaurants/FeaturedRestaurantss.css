@@ -1,0 +1,22 @@
+.featured-restaurants {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.featured-text {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #f0c14b;
+    font-family: 'Great Vibes', cursive; 
+}
+
+.featured-restaurants h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.featured-restaurants p {
+    font-size: 1.2em;
+    color: #555;
+}

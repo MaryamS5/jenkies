@@ -1,0 +1,25 @@
+header {
+    background-color: #2B3D5B;
+    color: white;
+    padding: 5px; 
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px; 
+  }
+  
+  .buy-now button {
+    background-color: #f0c14b;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

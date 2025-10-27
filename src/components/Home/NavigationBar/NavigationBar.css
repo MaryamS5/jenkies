@@ -1,0 +1,140 @@
+.navigation {
+  background-color: #15253f;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a, .nav-links .dropdown-toggle {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nav-links a:hover, .nav-links .dropdown-toggle:hover {
+  color: #f0c14b;
+}
+.dropdown{
+
+  
+   color: white;
+  font-weight: 500;
+   cursor: pointer;
+}
+.dropdown:hover {
+  color: #ffd700; 
+  
+}
+/* Dropdown Styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  flex-direction: row-reverse;
+}
+
+.nav-links li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: #15253f;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+/* Contact Info */
+.contact-info {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon {
+   margin-right: 5px;
+  color: white;
+  position: relative;
+  top: 10px; 
+}
+
+.search-cart-signin {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-icon, .cart-icon {
+  color: white;
+  cursor: pointer;
+}
+.cart-icon {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  top: 10px; 
+}
+.sign-in {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sign-in svg {
+  margin-left: 5px;
+}
+.sign-in:hover
+
+ {
+  text-decoration: underline;
+  cursor: pointer;
+   color: #f0c14b;
+}

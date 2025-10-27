@@ -1,0 +1,209 @@
+.BlogSection{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; 
+  }
+  
+  .BlogSection-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .BlogSection-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .BlogSection h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb .separator {
+    margin: 0 8px;
+    opacity: 0.8;
+  }
+  
+  .breadcrumb .current {
+    opacity: 0.8;
+  }
+  
+
+.blog-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff; 
+}
+
+.blog-header {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.our-blog {
+    color: #f0c14b;
+    font-size: 1.3em;
+    display: block;
+    margin-top: 10;
+}
+
+.blog-header h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.blog-header p {
+    color: #777;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 85%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.blog-post {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.post-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover .post-image img {
+    transform: scale(1.03);
+}
+
+.post-image .category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f0c14b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    z-index: 1;
+}
+
+.post-details {
+    padding: 20px;
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.author-date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: #888;
+    font-size: 1em;
+}
+
+.post-details h3 {
+    font-size: 1.4em; 
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+}
+
+.blog-post:hover .post-details h3 {
+    color: #f0c14b;
+}
+
+
+.recipe-detail {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.recipe-detail h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    color: #888;
+    font-size: 1.1em;
+}
+
+.recipe-content {
+    text-align: left;
+    margin-top: 30px;
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.recipe-content p {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,44 @@
+.hero-section {
+        background-image: url('./Images/burger-image.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: left;
+        padding: 150px 0 400px 0;
+    }
+.hero-content {
+    max-width: 800px;
+    margin: 0 100px;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.search-box button {
+    background-color: #f0c14b;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}

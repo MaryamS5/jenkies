@@ -1,0 +1,96 @@
+.restaurant-list-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-direction: column; 
+}
+
+.restaurant-scroll {
+    width: 75%;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.filter-options {
+    width: 25%;
+    padding: 20px;
+    border-left: 1px solid #e0e0e0;
+}
+
+.filter-options h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.filter-item .filter-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e6a93b;
+    margin-right: 8px;
+}
+
+.tag-item {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.rating-slider {
+    margin-top: 10px;
+}
+
+.rating-slider input[type=range] {
+    width: 100%;
+}
+
+.load-more-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.load-more-button {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #f0ad4e, #e67e22); 
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    text-decoration: none; 
+}
+
+.load-more-button:hover {
+    background: linear-gradient(to right, #e0a145, #d6721a); 
+}

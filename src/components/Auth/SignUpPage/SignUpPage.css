@@ -1,0 +1,102 @@
+/* Styling  for Signup Page */
+.signup-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f4f8ff; 
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; 
+    transition: all 0.3s ease;
+    margin-top: 70px;
+            margin-bottom: 100px;
+  }
+  
+  /* Heading */
+  .signup-page-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Field Styling */
+  .signup-page-container .input-field {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .signup-page-container .input-field:focus {
+    border-color: purple;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Button Styling */
+  .signup-page-container .submit-btn {
+    padding: 14px;
+    background-color: orchid; 
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+  }
+  
+  .signup-page-container .submit-btn:hover {
+    background-color: #218838; 
+    transform: scale(1.05);
+  }
+  
+  .signup-page-container .submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Login Link Styling */
+  .signup-page-container .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-page-container .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-page-container .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 480px) {
+    .signup-page-container {
+      padding: 20px; 
+    }
+  
+    .signup-page-container .input-field {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .signup-page-container .submit-btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .signup-page-container h1 {
+      font-size: 24px;
+    }
+  }
+  

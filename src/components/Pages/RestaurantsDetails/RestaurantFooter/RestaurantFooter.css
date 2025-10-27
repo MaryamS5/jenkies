@@ -1,0 +1,83 @@
+.restaurant-footer {
+    background-image: url('./images/backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-left,
+.footer-middle {
+    width: 30%;
+    text-align: left;
+}
+
+.footer-right {
+    width: 30%;
+    text-align: right; 
+}
+
+.footer-middle {
+    text-align: center;
+}
+
+.footer-middle .call-us-icon {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-middle .call-us-icon img {
+    width: 30px;
+}
+
+.footer-middle h3 {
+    margin: 10px 0;
+}
+
+.footer-right .payment-options img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer-right .download-app .app-badges {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.footer-right .download-app .app-badges img {
+    width: 120px;
+    margin-left: 10px; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.footer-bottom .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom .social-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}

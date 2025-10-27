@@ -1,0 +1,99 @@
+
+.popular-dishes-section {
+    padding: 70px 0; 
+    text-align: center;
+}
+
+.amazing-taste {
+    font-size: 2em;
+    color: #f0c14b;
+    margin-bottom: 5px;
+}
+
+.popular-dishes-title {
+    font-size: 3em; 
+    margin-bottom: 20px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-buttons button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.category-buttons button:hover {
+    background-color: #f9f9f9;
+}
+
+.category-buttons button.active {
+    background-color: #f0c14b;
+    color: white;
+    border-color: #f0c14b;
+}
+
+.popular-dishes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.popular-dishes-item {
+    width: 23%;
+    text-align: center;
+}
+
+.popular-dishes-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.popular-dishes-item h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.popular-dishes-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 0 10px 15px;
+}
+
+.popular-dishes-item .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.popular-dishes-item .add-to-cart {
+    background-color: #f0c14b;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.popular-dishes-item .add-to-cart:hover {
+    background-color: #d4a337;
+}

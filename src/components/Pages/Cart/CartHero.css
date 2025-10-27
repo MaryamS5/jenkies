@@ -1,0 +1,54 @@
+.cart-hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.cart-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.cart-hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    color: white;
+}
+
+.cart-hero-content .breadcrumb {
+    font-size: 1.1em;
+    color: #ddd;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-hero-content .breadcrumb a {
+    color: #ddd;
+    text-decoration: none;
+}
