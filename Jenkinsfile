@@ -20,29 +20,25 @@ pipeline {
             }
         }
 
-        stage('Login to Docker Hub') {
+        stage('Push to Docker Hub') {
             steps {
-                echo "Logging in to Docker Hub..."
-                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
-                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                echo "Logging into Docker Hub and pushing image..."
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                    sh '''
+                        echo "$PASSWORD" | docker login -u "$USERNAME" --password-stdin
+                        docker push $IMAGE_NAME
+                    '''
                 }
-            }
-        }
-
-        stage('Push Docker Image') {
-            steps {
-                echo "Pushing Docker image to Docker Hub..."
-                sh 'docker push $IMAGE_NAME'
             }
         }
     }
 
     post {
         success {
-            echo "Build and push completed successfully!"
+            echo " Docker image pushed successfully to Docker Hub!"
         }
         failure {
-            echo " Build or push failed. Check console output for details."
+            echo " Build failed — check console output."
         }
     }
 }
