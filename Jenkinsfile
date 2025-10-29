@@ -38,7 +38,7 @@ pipeline {
             echo " Docker image pushed successfully to Docker Hub!"
         }
         failure {
-            echo " Build failed — check console output."
+            echo " Build failed — check console output for errors."
         }
     }
 }
