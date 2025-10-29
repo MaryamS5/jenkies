@@ -2,33 +2,47 @@ pipeline {
     agent any
 
     environment {
-        // Use the ID you created earlier in Jenkins
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
         IMAGE_NAME = "maryamsohail123/jenkins"
     }
 
     stages {
-        stage('Pull from GitHub') {
+        stage('Clone Repository') {
             steps {
-                git 'https://github.com/MaryamS5/jenkies.git'  // <-- my  repo
+                echo "Cloning GitHub repository..."
+                git branch: 'main', url: 'https://github.com/MaryamS5/jenkies.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
+                echo "Building Docker image..."
                 sh 'docker build -t $IMAGE_NAME .'
             }
         }
 
-        stage('Push to Docker Hub') {
+        stage('Login to Docker Hub') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
-                    sh '''
-                    echo "$PASSWORD" | docker login -u "$USERNAME" --password-stdin
-                    docker push $IMAGE_NAME
-                    '''
+                echo "Logging in to Docker Hub..."
+                withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
                 }
             }
+        }
+
+        stage('Push Docker Image') {
+            steps {
+                echo "Pushing Docker image to Docker Hub..."
+                sh 'docker push $IMAGE_NAME'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Build and push completed successfully!"
+        }
+        failure {
+            echo " Build or push failed. Check console output for details."
         }
     }
 }
